@@ -23,24 +23,29 @@
 	<body>
 
 		<a href="#content" id="skipnav">Jump to Content</a>
-		<header>
+		<header role="banner">
 			<nav role="navigation"></nav>
 			<form role="search">
-				<label for="search1">Search</label><br /><input role="search" type="search" id="search1" />
+				<label for="search1">Search</label>
+				<input type="search" id="search1" />
 				<input type="submit" id="searchSubmit" />
 			</form>
 		</header>
-		<div role="main" id="content">
-			<article>
+		<main role="main" id="content">
+			<article role="article">
 				<h1>Hello World</h1>
-				<section>
+				<section role="region">
 					<h2>Hello World</h2>
 					<h3>Hello World</h3>
 					<h4>Hello World</h4>
 					<p>Hello World</p>
+					<p><a href="http://www.google.com">Visit Google</a></p>
 				</section>
-				<section>
-					<form action="" method="">
+				<section role="region">
+					<form role="form" action="" method="">
+						<p>
+							<button type="button">Button</button>
+						</p>
 						<p>
 							<label for="text1">Text</label><br />
 							<input type="text" id="text1" />
@@ -99,10 +104,29 @@
 							<label for="week1">Week</label><br />
 							<input type="week" id="week1" />
 						</p>
+						<p>
+							<input type="checkbox" id="check1" checked="checked" />
+							<label for="check1">Checkbox</label><br />
+							<input type="checkbox" id="check2" />
+							<label for="check2">Checkbox</label>
+						</p>
+						<p>
+							<input type="radio" name="radioGroup" id="radio1" value="01" />
+							<label for="radio1">Radio Button</label><br />
+							<input type="radio" name="radioGroup" id="radio2" value="02" />
+							<label for="radio2">Radio Button</label><br />
+							<input type="radio" name="radioGroup" id="radio3" value="03" />
+							<label for="radio3">Radio Button</label>
+						</p>
+						<p>
+							<input type="submit" value="Submit" />
+						</p>
 					</form>
 				</section>
 			</article>
-		</div>
-		<footer></footer>
+		</main>
+		<footer role="contentinfo">
+			
+		</footer>
 	</body>
 </html>
