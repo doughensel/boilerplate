@@ -25,7 +25,20 @@
 		<a href="#content" id="skipnav">Jump to Content</a>
 		<header role="banner">
 			<nav role="navigation">
-				
+				<!-- Main Menu denoted with role="menubar" -->
+				<ul role="menubar">
+					<li role="menuitem"><a href="/">Home</a></li>
+					<li role="menuitem"><a href="/">Demo Item 1</a></li>
+					<li role="menuitem"><a href="/">Demo List</a>
+						<!-- Secondary Menus denoted with role="menu" -->
+						<ul role="menu">
+							<li role="menuitem"><a href="/">Item 1</a></li>
+							<li role="menuitem"><a href="/">Item 2</a></li>
+							<li role="menuitem"><a href="/">Item 3</a></li>
+						</ul>
+					</li><!-- END Demo List -->
+					<li role="menuitem"><a href="/">Demo Item 2</a></li>
+				</ul>
 			</nav>
 			<form role="search">
 				<label for="search1">Search</label>
@@ -128,7 +141,11 @@
 			</article>
 		</main>
 		<aside role="complementary">
-
+			<ul role="menu">
+				<li role="menuitem"><a href="/">Related Post 1</a></li>
+				<li role="menuitem"><a href="/">Related Post 2</a></li>
+				<li role="menuitem"><a href="/">Related Post 3</a></li>
+			</ul>
 		</aside>
 		<footer role="contentinfo">
 			
