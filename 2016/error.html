@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+
+		<title>Error | 2016 Boilerplate</title>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+
+		<!--
+			For Canonical Links, it's best to use Absolute paths, when possible 
+			https://support.google.com/webmasters/answer/139066?hl=en&rd=1
+		-->
+		<link rel="canonical" href="https://www.example.com/index.html" />
+		<link rel="author" href="humans.txt" />
+
+		<style>
+			/** Dummied down CSS reset **/
+			html,body,div,span,h1,h2,h3,h4,p,a,img,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,canvas,footer,header,nav,section{border:0;font:normal 100% Arial,sans-serif;vertical-align:baseline;margin:0;padding:0}article,aside,footer,header,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}html{font-size: 62.5%}body{font-size:1.4rem}h1{font-size:xx-large}h2{font-size:x-large}h3{font-size:large}
+			/** Critical/Above the fold CSS **/
+			#skipnav{position:absolute;top:-1000px;left:-1000px}
+			.clear{clear:both}
+		</style>
+
+		<!-- Other styles not captured in inline CSS -->
+		<link rel="stylesheet" href="css/styles.css" screen="all" />
+		<link rel="stylesheet" href="css/print.css" screen="print" />
+
+	</head>
+	<body>
+
+		<a href="#content" id="skipnav">Jump to Content</a>
+		<header role="banner">
+			<nav role="navigation">
+				<!-- Main Menu denoted with role="menubar" -->
+				<ul role="menubar">
+					<li role="menuitem"><a href="#">Home</a></li>
+					<li role="menuitem"><a href="#">Demo Item 1</a></li>
+					<li role="menuitem"><a href="#">Demo List</a>
+						<!-- Secondary Menus denoted with role="menu" -->
+						<ul role="menu">
+							<li role="menuitem"><a href="#">Item 1</a></li>
+							<li role="menuitem"><a href="#">Item 2</a></li>
+							<li role="menuitem"><a href="#">Item 3</a></li>
+						</ul>
+					</li><!-- END Demo List -->
+					<li role="menuitem"><a href="#">Demo Item 2</a></li>
+				</ul>
+			</nav>
+			<form role="search">
+				<label for="search1">Search</label>
+				<input type="search" id="search1" />
+				<input type="submit" id="searchSubmit" />
+			</form>
+		</header>
+		<main role="main" id="content">
+			<article role="article">
+				<section role="region">
+					<h1>Error</h1>
+					<p>An error has occured</p>
+					<p><a href="index.html">Go back to Homepage</a></p>
+				</section>
+			</article>
+		</main>
+		<aside role="complementary">
+		</aside>
+		<footer role="contentinfo">
+		</footer>
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript" src="js/scripts.js" async></script>
+	</body>
+</html>
